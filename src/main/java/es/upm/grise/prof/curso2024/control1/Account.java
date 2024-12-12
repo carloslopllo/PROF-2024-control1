@@ -12,6 +12,12 @@ public class Account {
 	Account() {
 		transactions = new ArrayList<Transaction>();
 	}
+
+	Account(String accountNumber, float initialAmount) {
+		transactions = new ArrayList<Transaction>();
+		this.accountNumber = accountNumber;
+		this.initialAmount = initialAmount;
+	}
 	
 	public float getCurrentBalance() {
 		
