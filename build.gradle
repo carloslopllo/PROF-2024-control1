@@ -15,6 +15,12 @@ dependencies {
     testImplementation 'org.mockito:mockito-core:5.14.2'
 }
 
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
 jacoco {
     toolVersion = "0.8.12"
 }
